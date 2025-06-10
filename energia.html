@@ -1,41 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <section class="cabecalho">
-        <h1>AGRINHO 2025</h1>
-        <h3>Festejando Conexão Campo Cidade</h3>
-    </section>
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="energia.css">
+    <style>
+        .texto-lado {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
 
-    <!--cabeçalho do site-->
-    <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="producao.html">Produção</a>
-                    </li>
-                </ul>
+        .texto-lado .bloco {
+            flex: 1;
+            padding: 15px;
+        }
+
+        .texto-lado img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        @media (min-width: 768px) {
+            .texto-lado img {
+                width: 40%;
+                margin-bottom: 0;
+            }
+
+            .texto-lado .bloco {
+                width: 60%;
+            }
+
+            .texto-lado.flex-row-reverse {
+                flex-direction: row-reverse;
+            }
+
+            .texto-lado.flex-row-reverse .bloco {
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho text-center py-3">
+        <h1>AGRINHO</h1>
+        <h3>A Energia</h3>
+    </header>
+
+    <!-- Botão voltar fixo no canto superior direito -->
+    <a href="index.html" class="botao-voltar" title="Voltar para a página inicial">
+        &lt;
+    </a>
+
+    <!-- Conteúdo principal -->
+    <main class="container pt-5 pb-5">
+        <!-- Introdução -->
+        <article class="row mb-4">
+            <div class="col-12">
+                <h2 class="text-center">Energia no Campo: Muito Além da Luz</h2>
+                <p>
+                   A energia elétrica é fundamental para o desenvolvimento e a modernização das áreas rurais. Ela é utilizada em diversas atividades essenciais, como bombear água, operar máquinas agrícolas, conservar alimentos, movimentar equipamentos e garantir iluminação nas propriedades.
+
+Com o acesso à eletricidade, o trabalho no campo se torna mais eficiente e a qualidade de vida das famílias rurais melhora significativamente. No entanto, apesar de sua importância, a energia no meio rural ainda é tarifada de forma semelhante à das zonas urbanas o que aumenta os custos e representa um desafio para muitos produtores.
+                </p>
+            </div>
+        </article>
+
+        <!-- Imagem ilustrativa -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <img src="./assets/image/poste menor.jfif" class="img-fluid rounded img-thumbnail" alt="Uso da energia no campo">
             </div>
         </div>
-    </nav>
-    
+
+        <!-- Texto complementar -->
+        <article class="row mb-5">
+            <div class="col-12">
+                <p>
+                    Mesmo sendo essencial para garantir os alimentos que chegam à mesa das cidades, a energia usada no campo recebe
+                    poucos incentivos fiscais. Isso não só impacta o agricultor, como também eleva o preço final dos produtos para o
+                    consumidor urbano.
+                </p>
+            </div>
+        </article>
+
+        <!-- Seções lado a lado -->
+        <section class="texto-lado">
+            <div class="bloco">
+                <h3>Energia Solar:</h3>
+                <p>
+                    A energia solar tem ganhado destaque como uma alternativa sustentável e eficiente para os produtores rurais. Com a instalação de painéis solares, é possível gerar eletricidade de forma limpa, reduzir os custos com energia e diminuir a dependência das redes elétricas convencionais.
+
+Além de contribuir para a preservação do meio ambiente, essa tecnologia oferece mais autonomia ao agricultor e ajuda a aliviar a demanda energética nas áreas urbanas.
+
+No entanto, ainda existem desafios a serem superados, como a burocracia no processo de instalação, os altos custos iniciais e as taxas que podem desestimular o investimento. Mesmo assim, a energia solar representa um passo importante rumo a um campo mais moderno, sustentável e independente.
+                </p>
+            </div>
+            <img src="./assets/image/energia img 2.jfif" alt="Sistema de energia solar no campo">
+        </section>
+
+        <section class="texto-lado flex-row-reverse">
+            <div class="bloco">
+<h3>A Energia Hidrelétrica</h3>
+            No Brasil, grande parte da eletricidade é produzida por usinas hidrelétricas, muitas delas instaladas em regiões rurais. Apesar disso, os moradores dessas áreas frequentemente enfrentam dificuldades para acessar essa energia ou precisam pagar caro por ela.
+
+A energia hidrelétrica é considerada limpa e renovável, mas sua distribuição desigual e o sistema de cobrança atual tornam seu custo elevado tanto para quem vive no campo quanto para os consumidores das cidades.
+
+Essa situação evidencia uma contradição: o campo é responsável por gerar boa parte da energia do país, mas ainda sofre com a falta de acesso a esse recurso essencial para o desenvolvimento, a produção e a qualidade de vida das comunidades rurais.
+                </p>
+            </div>
+            <img src="./assets/image/energia img 1.jfif" alt="Hidrelétrica e acesso à energia">
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer text-center py-3">
+        <p>Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo-cidade.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

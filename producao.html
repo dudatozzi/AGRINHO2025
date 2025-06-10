@@ -1,41 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produção Rural - AGRINHO 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background: linear-gradient(to right, #28a745, #218838);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    .botao-voltar {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: #28a745;
+      color: white;
+      font-size: 1.3rem;
+      padding: 0.6rem 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      z-index: 1050;
+    }
+
+    .botao-voltar:hover {
+      background-color: #1e7e34;
+    }
+
+    .img-ajustada {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .botao-voltar {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <section class="cabecalho">
-        <h1>AGRINHO 2025</h1>
-        <h3>Festejando Conexão Campo Cidade</h3>
+
+  <!-- Botão voltar -->
+  <a href="index.html" class="botao-voltar" title="Voltar">&larr; Voltar</a>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>AGRINHO 2025</h1>
+    <h3>Do Campo Para a Cidade</h3>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container mt-5">
+
+    <!-- Introdução -->
+    <section class="mb-5 text-center">
+      <h2 class="mb-4">Campo e Cidade: Unidos pelo Alimento</h2>
+      <p class="lead">
+        Entenda como o trabalho no meio rural garante alimentos de qualidade para as cidades e como o consumo consciente fortalece essa relação.
+      </p>
     </section>
 
-    <!--cabeçalho do site-->
-    <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="producao.html">Produção</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
+    <!-- Seção 1 -->
+    <section class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="./assets/image/produçao img 2.jfif" class="img-ajustada" alt="Imagem ilustrativa da produção rural">
+      </div>
+      <div class="col-md-6">
+        <h3>Logística de Alimento</h3>
+        <p>
+        Uma logística bem organizada é essencial para reduzir perdas e desperdícios ao longo da cadeia produtiva. Quando o transporte, o armazenamento e a distribuição dos alimentos são planejados com eficiência, os produtos chegam com mais qualidade ao consumidor e o produtor tem melhores resultados.
+
+Esse cuidado em cada etapa do processo fortalece a segurança alimentar, evita o desperdício de recursos e promove um modelo de desenvolvimento mais justo, equilibrado e sustentável tanto para quem produz quanto para quem consome.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção 2 -->
+    <section class="row align-items-center mb-5">
+      <div class="col-md-6 order-md-2">
+        <img src="./assets/image/producao img 3.jfif" class="img-ajustada" alt="Caminho dos alimentos até a cidade">
+      </div>
+      <div class="col-md-6 order-md-1">
+        <h3>O Percurso dos Alimentos</h3>
+        <p>
+         Após a colheita, o transporte dos alimentos demanda um planejamento eficiente para garantir sua qualidade até o destino final. Caminhões refrigerados desempenham um papel fundamental nesse processo, preservando a frescura e a segurança dos produtos durante o trajeto até as cidades.
+
+Uma cadeia de distribuição bem estruturada não só minimiza as perdas e desperdícios, como também contribui para que os alimentos cheguem mais frescos e em melhores condições aos consumidores. Isso resulta em maior disponibilidade e preços mais acessíveis, beneficiando tanto produtores quanto a população em geral.
+    </section>
+
+    <!-- Seção 3 -->
+    <section class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="./assets/image/producao img 4.jfif" class="img-ajustada" alt="Trabalho agrícola na lavoura">
+      </div>
+      <div class="col-md-6">
+        <h3> Produção na Lavoura</h3>
+        <p>
+          Produzir alimentos é um processo complexo que envolve muito mais do que simplesmente lançar sementes ao solo. O agricultor precisa conhecer as características da terra, compreender os padrões climáticos e respeitar os ritmos naturais de cada cultura.
+
+Além da observação constante da natureza, é essencial aplicar conhecimentos técnicos e práticas sustentáveis que favoreçam o equilíbrio entre produtividade e preservação ambiental. O uso consciente dos recursos, como água e nutrientes, ajuda a manter a fertilidade do solo e a garantir colheitas de qualidade ao longo do tempo.
+
+A agricultura, portanto, exige dedicação, estudo e sensibilidade. É com esse cuidado que os produtores rurais conseguem oferecer alimentos saudáveis à população, contribuindo para a segurança alimentar e o desenvolvimento do país.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2025 AGRINHO. Festejando a conexão entre o campo e a cidade.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
